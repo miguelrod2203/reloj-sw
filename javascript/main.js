@@ -151,7 +151,7 @@ let envio = "gratis";
 let retiroEnTienda = "gratis";
 
 let entrega = prompt(`Elige un tipo de entrega
-1. Envio a domicilio $ ${envio};
+1. Envio a domicilio ${envio};
 2. Retiro en tienda ${retiroEnTienda};
 `);
 
@@ -165,7 +165,7 @@ function validarEntrega (){
     }    
 
     if (entrega == 1){
-        alert(`Envio por $ ${envio}`)
+        alert(`Envio por ${envio}`)
         console.log(`Tipo de entrega : Envio a domicilio`);
     }
     else if(entrega == 2){
@@ -216,9 +216,10 @@ function validarFormaDePago (){
 validarFormaDePago();
 
 /*
-************* NOTA*************
+***************** NOTA*************************
 todos los resultados de la simulacion tambien
 se pueden ir observando en consola de esta
 manera no se pierde la informacion seleccionada
-despues de avanzar a la siguiente linea.
+despues de avanzar a la siguiente linea a menos
+que refresques la pagina.
 */
