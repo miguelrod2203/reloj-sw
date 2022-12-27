@@ -151,25 +151,25 @@ let envio = "gratis";
 let retiroEnTienda = "gratis";
 
 let entrega = prompt(`Elige un tipo de entrega
-1. Envio a domicilio ${envio};
-2. Retiro en tienda ${retiroEnTienda};
+1. Envio a domicilio : ${envio}
+2. Retiro en tienda : ${retiroEnTienda}
 `);
 
 function validarEntrega (){
 
     while(entrega != 1 && entrega != 2){
         entrega = prompt(`Ingresa una opcion valida
-        1. Envio a domicilio ${envio};
-        2. Retiro en tienda ${retiroEnTienda};
-        `)
+        1. Envio a domicilio : ${envio}
+        2. Retiro en tienda : ${retiroEnTienda}
+        `);
     }    
 
     if (entrega == 1){
-        alert(`Envio por ${envio}`)
+        alert(`Envio a domicilio ${envio}`);
         console.log(`Tipo de entrega : Envio a domicilio`);
     }
     else if(entrega == 2){
-        alert(`Retiro en tienda ${retiroEnTienda}`)
+        alert(`Retiro en tienda ${retiroEnTienda}`);
         console.log(`Tipo de entrega : Retiro en tienda`);
     }
 
