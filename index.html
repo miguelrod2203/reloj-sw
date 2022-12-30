@@ -11,15 +11,38 @@
     
     <body>
         <div class="container">
-            <div class="header">
-                <header>
-                    <nav class="navbar fixed-top bg-light">
-                        <div class="container">
-                            <a class="navbar-brand" href="#">
-                                <img src="./imagenes/logo.jpg" alt="logo" title="logo" width="30" height="30">
-                                SmartWatch
+            <header class="header">
+                <nav class="navbar fixed-top bg-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="/index.html">
+                            <img src="./imagenes/logo.jpg" alt="logo" title="logo" width="30" height="30">
+                            SmartWatch
+                        </a>
+                        <div class="carrito">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
                             </a>
-                            <div class="carrito">
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <header class="header">
+                <nav class="header navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                    <div class="container">
+                        <a class="navbar-brand" href="/index.html">
+                            <img src="./imagenes/logo.jpg" alt="logo" title="logo" width="30" height="30">
+                            SmartWatch
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link" href="./index.html">Contactanos</a>
                                 <a href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                                         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
@@ -27,32 +50,130 @@
                                 </a>
                             </div>
                         </div>
-                    </nav>
-                </header>
-            </div>
+                    </div>
+                  </nav>
+            </header>
 
-            <div class="contenido">
-                <main>                    
-                    <div class="card_producto">
+            <main class="contenido">
+                <div class="contenido_producto">
+                    
+                    <div class="card_producto">                       
                         <div class="imagen_producto">
                             <img src="./imagenes/reloj1.jpg" alt="reloj" title="reloj">
                         </div>
                         <div class="Informacion_producto">
-                            <h2>Marca</h2>
-                            <h3>Nombre del Producto</h3>
-                            <p>$ Precio del producto</p>
+                            <p> 
+                                MARCA <br>
+                                Nombre del producto <br>
+                                $ Precio del producto
+                            </p>
                         </div>
                         <div class="boton_comprar">
-                            <a href="#" class="btn btn-danger">Agregar al Carro</a>
+                            <a href="#" class="btn d-md-flex justify-content-md-center btn-outline-success">Agregar al Carro</a>
                         </div>
                     </div>
-                </main>
-            </div>
-            <div class="aside">
-                <aside>
-                    <p>aqui va la informacion de la compra</p>
-                </aside>
-            </div>
+
+                    <div class="card_producto">                       
+                        <div class="imagen_producto">
+                            <img src="./imagenes/reloj1.jpg" alt="reloj" title="reloj">
+                        </div>
+                        <div class="Informacion_producto">
+                            <p> 
+                                MARCA <br>
+                                Nombre del producto <br>
+                                $ Precio del producto
+                            </p>
+                        </div>
+                        <div class="boton_comprar">
+                            <a href="#" class="btn d-md-flex justify-content-md-center btn-outline-success">Agregar al Carro</a>
+                        </div>
+                    </div>
+                                        
+                    <div class="card_producto">                       
+                        <div class="imagen_producto">
+                            <img src="./imagenes/reloj1.jpg" alt="reloj" title="reloj">
+                        </div>
+                        <div class="Informacion_producto">
+                            <p> 
+                                MARCA <br>
+                                Nombre del producto <br>
+                                $ Precio del producto
+                            </p>
+                        </div>
+                        <div class="boton_comprar">
+                            <a href="#" class="btn d-md-flex justify-content-md-center btn-outline-success">Agregar al Carro</a>
+                        </div>
+                    </div>
+                                        
+                    <div class="card_producto">                       
+                        <div class="imagen_producto">
+                            <img src="./imagenes/reloj1.jpg" alt="reloj" title="reloj">
+                        </div>
+                        <div class="Informacion_producto">
+                            <p> 
+                                MARCA <br>
+                                Nombre del producto <br>
+                                $ Precio del producto
+                            </p>
+                        </div>
+                        <div class="boton_comprar">
+                            <a href="#" class="btn d-md-flex justify-content-md-center btn-outline-success">Agregar al Carro</a>
+                        </div>
+                    </div>
+                                        
+                    <div class="card_producto">                       
+                        <div class="imagen_producto">
+                            <img src="./imagenes/reloj1.jpg" alt="reloj" title="reloj">
+                        </div>
+                        <div class="Informacion_producto">
+                            <p> 
+                                MARCA <br>
+                                Nombre del producto <br>
+                                $ Precio del producto
+                            </p>
+                        </div>
+                        <div class="boton_comprar">
+                            <a href="#" class="btn d-md-flex justify-content-md-center btn-outline-success">Agregar al Carro</a>
+                        </div>
+                    </div>
+                                        
+                    <div class="card_producto">                       
+                        <div class="imagen_producto">
+                            <img src="./imagenes/reloj1.jpg" alt="reloj" title="reloj">
+                        </div>
+                        <div class="Informacion_producto">
+                            <p> 
+                                MARCA <br>
+                                Nombre del producto <br>
+                                $ Precio del producto
+                            </p>
+                        </div>
+                        <div class="boton_comprar">
+                            <a href="#" class="btn d-md-flex justify-content-md-center btn-outline-success">Agregar al Carro</a>
+                        </div>
+                    </div>
+
+                    
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </main>
+
             <div class="footer">
                 <footer>
                     <p>este es mi pie de pagina</p>
