@@ -1,3 +1,5 @@
+/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,10 @@ body {
     color: #000000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+
+/* Layout */
 
 .container {  
     width: 100%;
@@ -25,12 +31,16 @@ body {
   
 
 
+/* Header */
+
 .container .header { 
     grid-area: header; 
     margin-bottom: 100px;
 }
 
 
+
+/* Contenido */
 
 .container .contenido { 
     grid-area: contenido;
@@ -66,9 +76,61 @@ body {
 
 
 
+/* SECCION DE CONTACTO */
+
+.container .contenido .titulos {
+    text-align: center;
+}
+
+.container .contenido .contacto {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
 
 
-/* estilos para el footer*/
+.container .contenido .contacto .direccion {
+    padding: 20px;
+}
+.container .contenido .contacto .formulario-contacto {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.container .contenido .contacto .formulario-contacto input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 5px; 
+    outline: none;
+}
+
+.container .contenido .contacto .formulario-contacto textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 35px;
+    padding-left: 10px;
+    max-height: 250px;
+    min-height: 150px;
+    border-radius: 5px;
+}
+
+.container .contenido .contacto .formulario-contacto select {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+
+
+/* Footer*/
 
 .container .footer { 
     grid-area: footer; 
@@ -99,4 +161,18 @@ body {
 .container .footer .ubicacion li { 
     list-style: none;
     color: #000000;
+}
+
+
+
+/* medias Querys para pantalla de 767px*/
+
+@media screen and (max-width: 767px) {
+
+}
+
+/* medias Querys para pantalla de 576px */
+
+@media screen and (max-width: 576px) {
+
 }
