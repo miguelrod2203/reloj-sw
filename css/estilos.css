@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #cccccc;
+    background-color: #f3eeee;
     color: #000000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -33,9 +33,33 @@ body {
 
 /* Header */
 
-.container .header { 
-    grid-area: header; 
-    margin-bottom: 100px;
+.container .header {
+    grid-area: header;
+    margin-bottom: 50px; 
+    background-image: linear-gradient(to right, white 60%, #141212);
+    border-bottom:1px solid #198754;
+}
+
+.container .header .navbar-brand img{
+    width: 30px;
+}
+.container .header .navbar-toggler {
+    color: #ffffff;
+}
+.container .header a {
+    color: #000000;
+}
+
+.container .header a:hover {
+    color: #198754;
+}
+
+
+
+/* TITULOS */
+
+.container .contenido .titulos {
+    text-align: center;
 }
 
 
@@ -56,9 +80,14 @@ body {
 
 .container .contenido .contenido_producto .card_producto {
     width: 200px;
-    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.container .contenido .contenido_producto .card_producto .imagen_producto hr {
+    margin: 0px;
 }
 
 .container .contenido .contenido_producto .card_producto img {
@@ -71,16 +100,13 @@ body {
 }
 
 .container .contenido .contenido_producto .card_producto .boton_comprar {
+    width: 100%;
     padding: 10px;
 }
 
 
 
 /* SECCION DE CONTACTO */
-
-.container .contenido .titulos {
-    text-align: center;
-}
 
 .container .contenido .contacto {
     width: 100%;
@@ -97,7 +123,7 @@ body {
 .container .contenido .contacto .formulario-contacto {
     width: 300px;
     padding: 10px;
-    border: 1px solid #ffffff;
+    border: 2px solid #cccccc;
     border-radius: 5px;
 }
 
@@ -135,7 +161,7 @@ body {
 .container .footer { 
     grid-area: footer; 
 
-    border-top: 1px solid #ffffff;   
+    border-top: 1px solid #198754;   
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
