@@ -50,18 +50,27 @@ body {
     color: #000000;
 }
 
-.container .header a:hover {
-    color: #198754;
+.container .header .collapse a:hover {
+    color: #ffffff;
 }
 
 
 
-/* TITULOS */
+/* Titulos */
 
 .container .contenido .titulos {
     text-align: center;
+    padding-bottom: 10px;
+    animation-name: efectoTitulos;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes efectoTitulos {
+    0%      {color: #000000;}
+    50%     {color: #198754;}
+    100%    {color: #7c4390;}
+}
 
 
 /* Contenido */
@@ -106,7 +115,7 @@ body {
 
 
 
-/* SECCION DE CONTACTO */
+/* Seccion de contacto */
 
 .container .contenido .contacto {
     width: 100%;
@@ -132,7 +141,7 @@ body {
     margin-bottom: 10px;
     height: 35px;
     padding-left: 10px;
-    border-radius: 5px; 
+    border: 1px solid #cccccc;
     outline: none;
 }
 
@@ -143,7 +152,8 @@ body {
     padding-left: 10px;
     max-height: 250px;
     min-height: 150px;
-    border-radius: 5px;
+    border: 1px solid #cccccc;
+    outline: none;
 }
 
 .container .contenido .contacto .formulario-contacto select {
@@ -151,7 +161,8 @@ body {
     margin-bottom: 10px;
     height: 35px;
     padding-left: 10px;
-    border-radius: 5px;
+    border: 1px solid #cccccc;
+    outline: none;
 }
 
 
@@ -190,6 +201,34 @@ body {
 }
 
 
+
+/* Estilos del carrito */
+.container-carrito{
+    padding: 10px;
+    background-color: #6fb2d1;
+}
+
+.container-carrito .header-carrito{
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #141212;
+}
+.container-carrito .header-carrito a{
+    text-decoration: none;
+    color: #141212;
+}
+
+.container-carrito .contenido-carrito .row {
+    margin-bottom: 10px;
+}
+.container-carrito .contenido-carrito img {
+    width: 90px;
+    border-radius: 10px;
+}
+.container-carrito .footer-carrito {
+    padding: 10px;
+    border-top: 1px solid #141212;
+}
 
 /* medias Querys para pantalla de 767px*/
 
