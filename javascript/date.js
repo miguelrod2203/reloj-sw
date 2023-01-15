@@ -17,16 +17,16 @@ class Producto {
 
 // MIS PRODUCTOS
 
-let producto1 = new Producto( 01, 'APPLE', 'Apple Watch Se (44Mm, Gps)', 'Azul media noche', './imagenes/smarwatch01.jpg', 'Digital', 'Unisex', 339990, 'IOS');
-let producto2 = new Producto( 02, 'APPLE', 'Apple Watch Ultra (49mm, GPS + Cellular)', 'Blanco estelar', './imagenes/smarwatch02.jpg', 'Digital', 'Unisex', 1079990, 'IOS');
-let producto3 = new Producto( 03, 'APPLE', 'Apple Watch series 7 (41mm, GPS)', 'Rojo', './imagenes/smarwatch03.jpg', 'Digital', 'Unisex', 429990, 'IOS');
-let producto4 = new Producto( 04, 'APPLE', 'Apple Watch Series 3 (42Mm, Gps)', 'Negra', './imagenes/smarwatch04.jpg', 'Digital', 'Unisex', 249990, 'IOS');
-let producto5 = new Producto( 05, 'APPLE', 'Apple Watch Series 8 (45mm, GPS)', 'Blanco estelar', './imagenes/smarwatch05.jpg', 'Digital', 'Unisex', 549990, 'IOS');
+let producto1 = new Producto( 1, 'APPLE', 'Apple Watch Se (44Mm, Gps)', 'Azul media noche', './imagenes/smarwatch01.jpg', 'Digital', 'Unisex', 339990, 'IOS');
+let producto2 = new Producto( 2, 'APPLE', 'Apple Watch Ultra (49mm, GPS + Cellular)', 'Blanco estelar', './imagenes/smarwatch02.jpg', 'Digital', 'Unisex', 1079990, 'IOS');
+let producto3 = new Producto( 3, 'APPLE', 'Apple Watch series 7 (41mm, GPS)', 'Rojo', './imagenes/smarwatch03.jpg', 'Digital', 'Unisex', 429990, 'IOS');
+let producto4 = new Producto( 4, 'APPLE', 'Apple Watch Series 3 (42Mm, Gps)', 'Negra', './imagenes/smarwatch04.jpg', 'Digital', 'Unisex', 249990, 'IOS');
+let producto5 = new Producto( 5, 'APPLE', 'Apple Watch Series 8 (45mm, GPS)', 'Blanco estelar', './imagenes/smarwatch05.jpg', 'Digital', 'Unisex', 549990, 'IOS');
 
-let producto6 = new Producto( 06, 'HUAWEI', 'Huawei Watch Gt 3 42Mm Gold Huawei', 'Dorado', './imagenes/smarwatch06.jpg', 'Digital', 'Mujer', 219990, 'Android/IOS');
-let producto7 = new Producto( 07, 'HUAWEI', 'Watch 3 Active Sport Nigth Black', 'Negro', './imagenes/smarwatch07.jpg', 'Digital', 'Unisex', 249990, 'Universal');
-let producto8 = new Producto( 08, 'HUAWEI', 'Huawei Gt 3 Pro 43Mm Silver + Freebuds 4', 'Plateado', './imagenes/smarwatch08.jpg', 'Digital', 'Mujer', 329990, 'Android/IOS');
-let producto9 = new Producto( 09, 'HUAWEI', 'HUAWEI BAND 7', 'Negro', './imagenes/smarwatch09.jpg', 'Digital', 'Mujer', 169990, 'Android/IOS');
+let producto6 = new Producto( 6, 'HUAWEI', 'Huawei Watch Gt 3 42Mm Gold Huawei', 'Dorado', './imagenes/smarwatch06.jpg', 'Digital', 'Mujer', 219990, 'Android/IOS');
+let producto7 = new Producto( 7, 'HUAWEI', 'Watch 3 Active Sport Nigth Black', 'Negro', './imagenes/smarwatch07.jpg', 'Digital', 'Unisex', 249990, 'Universal');
+let producto8 = new Producto( 8, 'HUAWEI', 'Huawei Gt 3 Pro 43Mm Silver + Freebuds 4', 'Plateado', './imagenes/smarwatch08.jpg', 'Digital', 'Mujer', 329990, 'Android/IOS');
+let producto9 = new Producto( 9, 'HUAWEI', 'HUAWEI BAND 7', 'Negro', './imagenes/smarwatch09.jpg', 'Digital', 'Mujer', 169990, 'Android/IOS');
 
 let producto10 = new Producto( 10, 'SAMSUNG', 'Smartwatch Reloj Inteligente Galaxy Watch4 40mm', 'Rosado', './imagenes/smarwatch10.jpg', 'Digital', 'Mujer', 154990, 'Android');
 let producto11 = new Producto( 11, 'SAMSUNG', 'Galaxy Watch4 Classic 46 mm Bluetooth', 'Negro', './imagenes/smarwatch011.jpg', 'Digital', 'Unisex', 199990, 'Android');

@@ -1,4 +1,8 @@
 "use strict" 
+
+// este simulador contempla los temas de
+// variables / control de flujo / ciclos / funciones
+
 alert('hola. Bienvenido a SW donde encontraras los mejores smartWatch.');
 console.log("Resumen de compra");
 
