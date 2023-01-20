@@ -7,7 +7,7 @@
         <title>smartWatch</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel='stylesheet' type='text/css' media='screen' href='./css/estilos.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../css/estilos.css'>
     </head>
     
     <body>
@@ -16,7 +16,7 @@
                 <nav class="header navbar navbar-expand-sm bg-light fixed-top">
                     <div class="container">
                         <a class="navbar-brand" href="/index.html">
-                            <img src="./imagenes/logo.jpg" alt="logo" title="logo">
+                            <img src="../imagenes/logo.jpg" alt="logo" title="logo">
                             SmartWatch
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,8 +27,8 @@
                         <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
                                 <a class="nav-link" href="/index.html">Inicio</a>
-                                <a class="nav-link" href="./html/contacto.html">Contacto</a>
-                                <a class="nav-link" href="./html/carrito.html">
+                                <a class="nav-link" href="/html/contacto.html">Contacto</a>
+                                <a class="nav-link" href="/html/carrito.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                                         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                                     </svg>
@@ -42,12 +42,28 @@
 
             <main class="contenido">
                 <div class="titulos">
-                    <h2 class="animate__animated animate__backInLeft">Bienvenido a smartWatch</h2>
-                    <p class="animate__animated animate__backInRight">Nuestro objetivo es que tengas el producto ideal para ti.</p>
-                </div>
+                    <h2 class="animate__animated animate__backInLeft">Conoce tu smartWatch</h2>
+                    <p class="animate__animated animate__backInRight">Observa las caracteristicas mas relevantes de nuestros productos.</p>
+                </div> 
 
-                <div class="contenido_producto" id="nuestrosProductos">
-                    <!-- mostrando los productos desde js con la funcion... renderizarNuestrosProductos(); -->
+                <div class="contenido_ver_mas">
+                    <div class="col-md-6">
+                        <img src="../imagenes/reloj1.jpg" alt="reloj-muestra" title="reloj-muestra">
+                    </div>
+                    <div class="col-md-6 detalle_producto" >
+                        <h3>Marca <span></span></h3>
+                        <ul>
+                            <li>Modelo: <span></span></li>
+                            <li>Precio: <span></span></li>
+                            <li>Color: <span></span></li>
+                            <li>Pantalla: <span></span></li>
+                            <li>Genero: <span></span></li>
+                            <li>Sistema Operativo: <span></span></li>
+                        </ul>
+                        <div class="boton_comprar d-grid float-end">
+                            <a href="#" class="btn justify-content-md-center btn-outline-success">Agregar al Carro</a>
+                        </div>
+                    </div>
                 </div>
 
             </main>
@@ -106,6 +122,5 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <script src="./javascript/date.js"></script>
-        <script src="./javascript/main.js"></script>
     </body>
 </html>

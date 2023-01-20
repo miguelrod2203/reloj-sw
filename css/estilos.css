@@ -73,7 +73,7 @@ body {
 }
 
 
-/* Contenido */
+/* Contenido index*/
 
 .container .contenido { 
     grid-area: contenido;
@@ -113,7 +113,24 @@ body {
     padding: 10px;
 }
 
+/* seccion contenido ver mas */
 
+.container .contenido .contenido_ver_mas { 
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container .contenido .contenido_ver_mas img {
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.6);
+}
+
+.container .contenido .contenido_ver_mas .detalle_producto {
+    text-align: left;
+}
 
 /* Seccion de contacto */
 
@@ -234,6 +251,9 @@ body {
 /* medias Querys para pantalla de 767px*/
 
 @media screen and (max-width: 767px) {
+    .container .contenido .contenido_ver_mas img {
+        width: 100%;
+    }
 
 }
 
