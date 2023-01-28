@@ -149,6 +149,7 @@ body {
 .container .contenido .contacto .formulario-contacto {
     width: 300px;
     padding: 10px;
+    text-align: center;
     border: 2px solid #cccccc;
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.6);
@@ -183,6 +184,14 @@ body {
     outline: none;
 }
 
+.container .contenido .contacto .formulario-contacto .mensaje-error {
+    display: none;
+}
+
+.container .contenido .contacto .formulario-contacto span {
+    color: #ff0000;
+    font-size: 12px;
+}
 
 
 /* Footer*/

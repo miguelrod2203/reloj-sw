@@ -1,4 +1,4 @@
-const updateData = (e) => {
+const caracteristicasDeProducto = (e) => {
     let idProducto = localStorage.getItem('productoElegido');
     idProducto =JSON.parse(idProducto);
 
@@ -32,7 +32,7 @@ const updateData = (e) => {
 
     document.querySelector('.imagen').appendChild(img)
 }
-updateData();
+caracteristicasDeProducto();
 
 
 
