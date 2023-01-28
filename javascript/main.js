@@ -1,6 +1,17 @@
 "use strict"
 
-// funcion para mostrar nuestros productos
+// funcion para guardar el id del producto
+
+const detallesProducto = (e) => {
+    const idProducto = e.target.closest('.card_producto').getAttribute('data-id');
+
+    const idJason = JSON.stringify(idProducto);
+    localStorage.setItem("productoElegido", idJason);
+
+}
+
+
+// funcion para mostrar nuestros productos 
 
 const nuestrosProductos = document.querySelector('#nuestrosProductos');
 
@@ -31,6 +42,13 @@ const renderizarNuestrosProductos = () => {
             `
         nuestrosProductos.append(cardProducto)
     })
+    
+    const verMasDelProducto = document.querySelectorAll('.card_producto')
+    verMasDelProducto.forEach((verMas) => {
+        verMas.addEventListener('click', detallesProducto)
+    })
+
+
 }
 renderizarNuestrosProductos();
 

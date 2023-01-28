@@ -42,26 +42,29 @@
 
             <main class="contenido">
                 <div class="titulos">
-                    <h2 class="animate__animated animate__backInLeft">Conoce tu smartWatch</h2>
+                    <h1 class="animate__animated animate__backInLeft">Conoce tu smartWatch</h1>
                     <p class="animate__animated animate__backInRight">Observa las caracteristicas mas relevantes de nuestros productos.</p>
                 </div> 
 
-                <div class="contenido_ver_mas">
-                    <div class="col-md-6">
-                        <img src="../imagenes/reloj1.jpg" alt="reloj-muestra" title="reloj-muestra">
-                    </div>
-                    <div class="col-md-6 detalle_producto" >
-                        <h3>Marca <span></span></h3>
-                        <ul>
-                            <li>Modelo: <span></span></li>
-                            <li>Precio: <span></span></li>
-                            <li>Color: <span></span></li>
-                            <li>Pantalla: <span></span></li>
-                            <li>Genero: <span></span></li>
-                            <li>Sistema Operativo: <span></span></li>
-                        </ul>
-                        <div class="boton_comprar d-grid float-end">
-                            <a href="#" class="btn justify-content-md-center btn-outline-success">Agregar al Carro</a>
+                <div class="row">
+                    <div class="contenido_ver_mas">
+                        <div class="col-md-6 imagen">
+                            <img class="imagenes">
+                        </div>
+                        <div class="col-md-6 detalle_producto" >
+                            <h2>Marca: <span class="marca"></span></h2>
+                            <h3>Modelo: <span class="nombre"></span></h3>
+                            <p>Precio: <span class="precio"></span> clp</p>
+                            <p>Caracteristicas adicionales</p>
+                            <ul> 
+                                <li>Color: <span class="color"></span></li>
+                                <li>Pantalla: <span class="pantalla"></span></li>
+                                <li>Genero: <span class="genero"></span></li>
+                                <li>Sistema Operativo: <span class="sistemaOperativo"></span></li>
+                            </ul>
+                            <div class="boton_comprar d-grid float-end">
+                                <a href="#" class="btn justify-content-md-center btn-outline-success">Agregar al Carro</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,6 +124,7 @@
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <script src="./javascript/date.js"></script>
+        <script src="../javascript/date.js"></script>
+        <script src="../javascript/verMas.js"></script>
     </body>
 </html>
