@@ -231,8 +231,9 @@ body {
 
 /* Estilos del carrito */
 .container-carrito{
-    padding: 10px;
-    background-color: #6fb2d1;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
 }
 
 .container-carrito .header-carrito{
@@ -249,19 +250,25 @@ body {
     margin-bottom: 10px;
 }
 .container-carrito .contenido-carrito img {
-    width: 90px;
+    width: 100%;
     border-radius: 10px;
 }
 .container-carrito .footer-carrito {
     padding: 10px;
-    border-top: 1px solid #141212;
 }
+/* .disabled {
+    display: none;
+} */
 
 /* medias Querys para pantalla de 767px*/
 
 @media screen and (max-width: 767px) {
     .container .contenido .contenido_ver_mas img {
         width: 100%;
+    }
+    .container-carrito .contenido-carrito .row {
+        flex-direction: column;
+        align-items: center;
     }
 
 }

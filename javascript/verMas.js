@@ -13,8 +13,6 @@ const caracteristicasDeProducto = (e) => {
     let genero = document.querySelector('.genero');
     let sistemaOperativo = document.querySelector('.sistemaOperativo');
 
-    console.log(productoElegido.imagen)
-
     imagenes.textContent = productoElegido.imagenes
     marca.textContent= productoElegido.marca
     nombre.textContent= productoElegido.nombre
