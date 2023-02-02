@@ -25,7 +25,7 @@ function cargarProductosCarrito() {
             div.innerHTML = `
                     <div class="row">
                         <div class="col imagen-carrito">
-                            <img src="${producto.imagen}" alt="${producto.nombre}" title="reloj">    
+                            <img src="../${producto.imagen}" alt="${producto.nombre}" title="reloj">    
                         </div>
                         
                         <div class="col producto-carrito"> 
