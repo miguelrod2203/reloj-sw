@@ -27,6 +27,7 @@ const caracteristicasDeProducto = (e) => {
     img.src = '../'+productoElegido.imagen;
     img.alt = productoElegido.modelo;
     img.title = productoElegido.modelo;
+    console.log("img: ", img);
 
     document.querySelector('.imagen').appendChild(img)
 }
