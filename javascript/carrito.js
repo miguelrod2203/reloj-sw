@@ -37,7 +37,8 @@ function cargarProductosCarrito() {
                         </div>
                         
                         <div class="col eliminar-carrito">
-                            <a href="#" class="btn btn-danger carrito-producto-eliminar" id="${producto.id}">Borrar</a>    
+                            <a href="#" class="btn btn-danger carrito-producto-eliminar" id="${producto.id}">Borrar</a>
+                            <a href="../index.html" class="btn btn-primary" id="volver">Volver</a> 
                         </div>
                     </div>
                     <hr>
