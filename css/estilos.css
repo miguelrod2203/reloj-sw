@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: #f3eeee;
     color: #000000;
@@ -39,7 +38,6 @@ body {
     background-image: linear-gradient(to right, white 60%, #141212);
     border-bottom:1px solid #198754;
 }
-
 .container .header .navbar-brand img{
     width: 30px;
 }
@@ -49,7 +47,6 @@ body {
 .container .header a {
     color: #000000;
 }
-
 .container .header .collapse a:hover {
     color: #ffffff;
 }
@@ -65,7 +62,6 @@ body {
     animation-duration: 15s;
     animation-iteration-count: infinite;
 }
-
 @keyframes efectoTitulos {
     0%      {color: #000000;}
     50%     {color: #198754;}
@@ -73,19 +69,18 @@ body {
 }
 
 
+
 /* Contenido index*/
 
 .container .contenido { 
     grid-area: contenido;
 }
-
 .container .contenido .contenido_producto { 
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly; 
 }
-
 .container .contenido .contenido_producto .card_producto {
     width: 200px;
     background-color: #ffffff;
@@ -94,24 +89,22 @@ body {
     margin-bottom: 15px;
     box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.6);
 }
-
 .container .contenido .contenido_producto .card_producto .imagen_producto hr {
     margin: 0px;
 }
-
 .container .contenido .contenido_producto .card_producto img {
     width: 100%;
     padding: 10px;
 }
-
 .container .contenido .contenido_producto .card_producto .Informacion_producto {
     padding: 10px;
 }
-
 .container .contenido .contenido_producto .card_producto .boton_comprar {
     width: 100%;
     padding: 10px;
 }
+
+
 
 /* seccion contenido ver mas */
 
@@ -120,14 +113,12 @@ body {
     display: flex;
     flex-flow: row wrap;
 }
-
 .container .contenido .contenido_ver_mas img {
     width: 80%;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.6);
 }
-
 .container .contenido .contenido_ver_mas .detalle_producto {
     text-align: left;
 }
@@ -141,8 +132,6 @@ body {
     justify-content: space-around;
     padding-bottom: 50px;
 }
-
-
 .container .contenido .contacto .direccion {
     padding: 20px;
 }
@@ -154,7 +143,6 @@ body {
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.6);
 }
-
 .container .contenido .contacto .formulario-contacto input {
     width: 100%;
     margin-bottom: 10px;
@@ -163,7 +151,6 @@ body {
     border: 1px solid #cccccc;
     outline: none;
 }
-
 .container .contenido .contacto .formulario-contacto textarea {
     width: 100%;
     margin-bottom: 10px;
@@ -174,7 +161,6 @@ body {
     border: 1px solid #cccccc;
     outline: none;
 }
-
 .container .contenido .contacto .formulario-contacto select {
     width: 100%;
     margin-bottom: 10px;
@@ -183,11 +169,9 @@ body {
     border: 1px solid #cccccc;
     outline: none;
 }
-
 .container .contenido .contacto .formulario-contacto .mensaje-error {
     display: none;
 }
-
 .container .contenido .contacto .formulario-contacto span {
     color: #ff0000;
     font-size: 12px;
@@ -207,7 +191,6 @@ body {
     align-items: baseline;
     margin-top:20px; 
 }
-
 .container .footer .redes-sociales li { 
     list-style: none;
 }
@@ -245,20 +228,24 @@ body {
     text-decoration: none;
     color: #141212;
 }
-
+.container-carrito .contenido-carrito .carrito-vacio {
+    text-align: center;
+    padding-top: 30px;
+}
 .container-carrito .contenido-carrito .row {
     margin-bottom: 10px;
 }
 .container-carrito .contenido-carrito img {
-    width: 100%;
+    width: 200px;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.6);
 }
 .container-carrito .footer-carrito {
     padding: 10px;
 }
-/* .disabled {
+.disabled {
     display: none;
-} */
+}
 
 /* medias Querys para pantalla de 767px*/
 
@@ -266,15 +253,17 @@ body {
     .container .contenido .contenido_ver_mas img {
         width: 100%;
     }
-    .container-carrito .contenido-carrito .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
 }
 
 /* medias Querys para pantalla de 576px */
 
 @media screen and (max-width: 576px) {
-
+    .container-carrito .contenido-carrito .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-carrito .contenido-carrito img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
