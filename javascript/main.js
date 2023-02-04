@@ -36,7 +36,7 @@ const renderizarNuestrosProductos = () => {
                 <p> 
                     ${producto.marca} <br>
                     ${producto.nombre} <br>
-                    $ ${producto.precio}.
+                    $ ${producto.precio}
                 </p>
             </div>
 
@@ -88,6 +88,26 @@ if(productosEnCarritoLS) {
 
 
 function agregarAlCarrito(e){
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        close: false,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #198754, #96c93d)",
+          borderRadius: "2rem",
+          fontSize: ".75rem",
+          padding: "5px"
+        },
+        offset: {
+            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: '2rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
     const idBoton = e.currentTarget.id;
     const productoAgregado = listaDeProductos.find(producto => producto.id === idBoton);
     

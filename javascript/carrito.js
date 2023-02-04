@@ -32,7 +32,7 @@ function cargarProductosCarrito() {
                             <p><b>Nombre:</b> ${producto.nombre}</p> 
                             <p><b>Precio:</b> $ ${producto.precio}</p> 
                             <p><b>Cantidad:</b> ${producto.cantidad}</p> 
-                            <p><b>Subtotal:</b> ${producto.precio * producto.cantidad}</p>
+                            <p><b>Subtotal:</b> ${producto.precio * producto.cantidad} clp</p>
                              
                         </div>
                         
@@ -69,6 +69,27 @@ function actualizarBotonesEliminar (){
 }
 
 function eliminarDelCarrito(e) {
+    Toastify({
+        text: "Producto eliminado",
+        duration: 3000,
+        close: false,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #dc3545 60%, #141212)",
+          borderRadius: "2rem",
+          fontSize: ".75rem",
+          padding: "5px"
+        },
+        offset: {
+            x: '5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: '2rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
+
     const idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
     productosEnCarrito.splice(index, 1);
@@ -82,9 +103,29 @@ function eliminarDelCarrito(e) {
 
 botonVaciar.addEventListener("click", vaciarCarrito)
 function vaciarCarrito() {
-    productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-    cargarProductosCarrito();
+    Swal.fire(
+        'Estas Seguro?',
+        'Se van a eliminar todos tus productos',
+        'question'
+      )
+      Swal.fire({
+        title: '¿Estas Seguro?',
+        icon: 'question',
+        html:
+          'Se van a eliminar todos los productos',
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText:
+          'Si',
+        cancelButtonText:
+          'No',
+      }).then((result) => {
+        if (result.isConfirmed) {
+            productosEnCarrito.length = 0;
+            localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+            cargarProductosCarrito();
+        }
+      })
 }
 
 
