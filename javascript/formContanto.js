@@ -1,5 +1,23 @@
 "use strict"
 
+const contador = document.querySelector('#contador');
+
+let productosEnCarrito;
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
+
+if(productosEnCarritoLS) {
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+    actualizarcontador()
+} else {
+    productosEnCarrito = [];
+}
+
+// contador de productos en carrito
+function actualizarcontador() {
+    let contadorProductos = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    contador.innerText = contadorProductos;
+}
+
 // validando el formulario de contacto
 
 const form = document.getElementById('formId');
@@ -47,6 +65,17 @@ form.addEventListener("submit", e=>{
         entrar = true;
     } else {
         document.getElementById('error-mensaje').classList.add("mensaje-error");
+    }
+
+    if(nombre.value.length >= 3 && telefono.value.length >= 7 && mensaje.value.length >= 8 && expresionRegularCorreo.test(correo.value)){
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Tu mensaje ha sido enviado.',
+            showConfirmButton: false,
+            timer: 3000
+          })
+        form.reset();
     }
 })
 
