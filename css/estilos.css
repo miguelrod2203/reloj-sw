@@ -220,9 +220,8 @@ body {
 }
 
 .container-carrito .header-carrito{
-    text-align: center;
     margin-bottom: 10px;
-    border-bottom: 1px solid #141212;
+    border-bottom: 1px solid #198754;
 }
 
 .container-carrito .contenido-carrito .carrito-vacio {
