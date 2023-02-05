@@ -60,10 +60,6 @@ const renderizarNuestrosProductos = () => {
 renderizarNuestrosProductos();
 
 
-
-
-
-
 // actualizar el id de los botones
 function actualizarBotonesAgregar (){
     botonesAgregar = document.querySelectorAll('.agregar-producto');

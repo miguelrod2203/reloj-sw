@@ -1,3 +1,25 @@
+"use strict"
+
+const contador = document.querySelector('#contador');
+
+let productosEnCarrito;
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
+
+if(productosEnCarritoLS) {
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+    actualizarcontador()
+} else {
+    productosEnCarrito = [];
+}
+
+// contador de productos en carrito
+function actualizarcontador() {
+    let contadorProductos = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    contador.innerText = contadorProductos;
+}
+
+
+// funcion para mostrar detalle de un producto especifico
 const caracteristicasDeProducto = (e) => {
     let idProducto = localStorage.getItem('productoElegido');
     idProducto =JSON.parse(idProducto);
