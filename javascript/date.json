@@ -1,0 +1,62 @@
+[
+    {
+        "id" : "1",
+        "marca" : "APPLE",
+        "nombre" : "Apple Watch Se (44Mm, Gps)",
+        "color" : "Azul media noche",
+        "imagen" : "/imagenes/smarwatch01.jpg",
+        "pantalla" : "Digital",
+        "genero" : "Unisex",
+        "precio" : 339.990,
+        "sistemaOperativo" : "IOS"
+
+    },
+    {
+        "id" : "2",
+        "marca" : "APPLE",
+        "nombre" : "Apple Watch Ultra (49mm, GPS + Cellular)",
+        "color" : "Blanco estelar",
+        "imagen" : "imagenes/smarwatch02.jpg",
+        "pantalla" : "Digital",
+        "genero" : "Unisex",
+        "precio" : 1079990,
+        "sistemaOperativo" : "IOS"
+    },
+    {
+        "id" : "3",
+        "marca" : "APPLE",
+        "nombre" : "Apple Watch series 7 (41mm, GPS)",
+        "color" : "Rojo",
+        "imagen" : "/imagenes/smarwatch03.jpg",
+        "pantalla" : "Digital",
+        "genero" : "Unisex",
+        "precio" : 429990,
+        "sistemaOperativo" : "IOS"
+
+    },
+    {
+        "id" : "4",
+        "marca" : "APPLE",
+        "nombre" : "Apple Watch Series 3 (42Mm, Gps)",
+        "color" : "Negra",
+        "imagen" : "imagenes/smarwatch04.jpg",
+        "pantalla" : "Digital",
+        "genero" : "Unisex",
+        "precio" : 249990,
+        "sistemaOperativo" : "IOS"
+    },
+    {
+        "id" : "5",
+        "marca" : "APPLE",
+        "nombre" : "Apple Watch Series 8 (45mm, GPS))",
+        "color" : "Blanco estelar",
+        "imagen" : "imagenes/smarwatch05.jpg",
+        "pantalla" : "Digital",
+        "genero" : "Unisex",
+        "precio" : 549990,
+        "sistemaOperativo" : "IOS"
+    }
+
+
+
+]

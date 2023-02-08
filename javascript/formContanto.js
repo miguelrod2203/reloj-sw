@@ -69,7 +69,7 @@ form.addEventListener("submit", e=>{
 
     if(nombre.value.length >= 3 && telefono.value.length >= 7 && mensaje.value.length >= 8 && expresionRegularCorreo.test(correo.value)){
         Swal.fire({
-            position: 'top-center',
+            position: 'center',
             icon: 'success',
             title: 'Tu mensaje ha sido enviado.',
             showConfirmButton: false,

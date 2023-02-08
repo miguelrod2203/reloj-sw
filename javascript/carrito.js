@@ -8,7 +8,9 @@ const contenedorCarritoConProductos = document.querySelector("#carritoConProduct
 const contenedorResumenCompra = document.querySelector("#resumenCompra");
 let botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 const contenedorTotal = document.querySelector("#total");
-const botonVaciar = document.querySelector("#vaciar-carrito")
+const botonVaciar = document.querySelector("#vaciar-carrito");
+const botonPagar = document.querySelector("#pagar-carrito");
+const captacionDatos = document.querySelector("#captacion-datos");
 
 function cargarProductosCarrito() {
     if (productosEnCarrito && productosEnCarrito.length > 0) {
@@ -110,9 +112,16 @@ function eliminarDelCarrito(e) {
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
+// calculando la sumatoria de precios del producto
+
+function actualizarTotal () {
+    const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
+    total.innerText = `Total a pagar: $ ${totalCalculado}`;
+}
+
 // para vaciar todo el carrito 
 
-botonVaciar.addEventListener("click", vaciarCarrito)
+botonVaciar.addEventListener("click", vaciarCarrito);
 function vaciarCarrito() {
     Swal.fire(
         'Estas Seguro?',
@@ -133,17 +142,80 @@ function vaciarCarrito() {
       }).then((result) => {
         if (result.isConfirmed) {
             productosEnCarrito.length = 0;
+            captacionDatos.classList.add("disabled");
             localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
             cargarProductosCarrito();
         }
       })
 }
 
+// pagar productos en carrito
 
-// calculando la sumatoria de precios del producto
-
-function actualizarTotal () {
-    const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
-    total.innerText = `Total a pagar: $ ${totalCalculado}`;
+botonPagar.addEventListener("click", pagarCarrito);
+function pagarCarrito() {
+    captacionDatos.classList.remove("disabled");
+    contenedorCarritoConProductos.classList.add("disabled");
 }
+
+// validar formulario de compra
+
+const formularioCliente = document.getElementById('formulario-cliente');
+const nombreCliente = document.getElementById('nombreCliente');
+const telefonoCliente = document.getElementById('telefonoCliente');
+const correoCliente = document.getElementById('correoCliente');
+const direccionCliente = document.getElementById('direccionCliente');
+const observacionCliente = document.getElementById('observacionCliente');
+const metodoPagoCliente = document.getElementById('metodoPagoCliente');
+
+formularioCliente.addEventListener("submit", e=>{
+    e.preventDefault()
+    let entrar = false;
+    let expresionRegularCorreo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if(nombreCliente.value.length < 3){
+        document.getElementById('error-nombreCliente').classList.remove("mensaje-errorCliente");
+        entrar = true;
+    } else {
+        document.getElementById('error-nombreCliente').classList.add("mensaje-errorCliente");
+    }
+
+    if(telefonoCliente.value.length < 7){
+        document.getElementById('error-telefonoCliente').classList.remove("mensaje-errorCliente");
+        entrar = true;
+    } else {
+        document.getElementById('error-telefonoCliente').classList.add("mensaje-errorCliente");
+    }
+
+    if(!expresionRegularCorreo.test(correoCliente.value)){
+        document.getElementById('error-correoCliente').classList.remove("mensaje-errorCliente");
+        entrar = true;
+    } else {
+        document.getElementById('error-correoCliente').classList.add("mensaje-errorCliente");
+    }
+
+    if(direccionCliente.value.length < 6){
+        document.getElementById('error-direccionCliente').classList.remove("mensaje-errorCliente");
+        entrar = true;
+    } else {
+        document.getElementById('error-direccionCliente').classList.add("mensaje-errorCliente");
+    }
+
+    if(metodoPagoCliente.value === ""){
+        document.getElementById('error-metodoPagoCliente').classList.remove("mensaje-errorCliente");
+        entrar = true;
+    } else {
+        document.getElementById('error-metodoPagoCliente').classList.add("mensaje-errorCliente");
+    }
+
+    if(nombreCliente.value.length >= 3 && telefonoCliente.value.length >= 7 && expresionRegularCorreo.test(correoCliente.value) && direccionCliente.value.length >= 6){
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Compra realizada.',
+            showConfirmButton: false,
+            timer: 3000
+          })
+          formularioCliente.reset();
+    }
+})
 

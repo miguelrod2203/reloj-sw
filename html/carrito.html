@@ -54,24 +54,56 @@
                         <!-- mostrando los productos del carrito desde js con la funcion... cargarProductosCarrito(); -->
                     </div>
 
+                    <div id="resumenCompra" class="footer-carrito disabled">
+                        <div class="row">
+                            <p id="total"></p>
+                        </div>
+                        <div class="row d-grid gap-2">
+                            <button type="button" class="btn btn-outline-warning" id="vaciar-carrito">Vaciar Carrito</button>
+                            <button type="button" class="btn btn-outline-success" id="pagar-carrito">Ir a Pagar</button>
+                        </div> 
+                    </div>
+
+                    <div class="captacion-datos disabled" id="captacion-datos">                           
+                        <div class="formulario-cliente">
+                            <form class="compra-cliente" action="" method="get" id="formulario-cliente">
+                                <input type="text" placeholder="Ingrese su Nombre" name="nombre" id="nombreCliente" required minlength="3">
+                                <span id="error-nombreCliente" class="mensaje-errorCliente">El nombre no es valido</span>
+
+                                <input type="text" placeholder="Ingrese su Telefono" name="numero" id="telefonoCliente" required minlength="7">
+                                <span id="error-telefonoCliente" class="mensaje-errorCliente">El telefono no es valido</span>
+
+                                <input type="email" placeholder="Ingrese su Correo" name="correo" id="correoCliente" required>
+                                <span id="error-correoCliente" class="mensaje-errorCliente">El correo no es valido</span>
+
+                                <input type="text" placeholder="Ingrese su Direccion" name="nombre" id="direccionCliente" required minlength="6">
+                                <span id="error-direccionCliente" class="mensaje-errorCliente">La direccion no es valida</span>
+
+                                <input type="text" placeholder="Observacion" name="Observacion" id="observacionCliente">
+
+                                <select name="seleccionar" id="metodoPagoCliente" required>
+                                    <option value="" selected>Metodo de Pago</option>
+                                    <option value="Transferencia">Transferencia</option>
+                                    <option value="Debito">Debito</option>
+                                    <option value="Credito">Credito</option>
+                                    <option value="PayPal">PayPal</option>
+                                </select>
+                                <span id="error-metodoPagoCliente" class="mensaje-errorCliente">Debe indica el metodo de pago</span>
+
+                                <input type="submit"class="btn btn-outline-success" id="pagarCliente" value="Pagar">  
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </main>
 
-            <footer id="resumenCompra" class="footer-carrito disabled">                              
-                <div class="row">
-                    <p id="total"></p>
-                </div>
-                <div class="row d-grid gap-2">
-                    <button type="button" class="btn btn-outline-warning" id="vaciar-carrito">Vaciar Carrito</button>
-                    <button type="button" class="btn btn-outline-success">Pagar</button>
-                </div>           
-            </footer>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="../javascript/date.js"></script>
+        <!-- <script src="../javascript/date.js"></script> -->
         <script src="../javascript/carrito.js"></script>
     </body>
 </html>

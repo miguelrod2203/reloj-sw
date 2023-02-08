@@ -1,5 +1,17 @@
 "use strict"
 
+// aplicando fetch para llamar mi lista de productos
+
+let listaDeProductos = [];
+
+fetch("javascript/date.json")
+    .then(response => response.json())
+    .then(data => {
+        listaDeProductos = data;
+        renderizarNuestrosProductos(listaDeProductos)
+    })
+
+
 // funcion para guardar el id del producto
 
 const detallesProducto = (e) => {

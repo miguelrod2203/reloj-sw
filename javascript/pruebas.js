@@ -6,7 +6,7 @@
 //         this.nombre = nombre;
 //         this.color = color;
 //         this.imagen = imagen;
-//         this.pantalla = pantalla
+//         this.pantalla = pantalla;
 //         this.genero = genero;
 //         this.precio = precio;
 //         this.sistemaOperativo = sistemaOperativo;
@@ -22,50 +22,11 @@
 // let listaDeProductos = [producto1, producto2, producto3, producto4, producto5]
 
 
+// let listaDeProductos = [];
 
-// const nuestrosProductos = document.querySelector('#nuestrosProductos');
-
-// let carrito = [];
-
-// const renderizarNuestrosProductos = () => {
-//     listaDeProductos.forEach((producto) => {
-//         const cardProducto = document.createElement('div')
-//         cardProducto.classList.add('card_producto')
-//         cardProducto.setAttribute('data-id', producto.id)
-//         cardProducto.innerHTML = `
-//             <div class="imagen_producto">
-//                 <a href="./html/verMas.html">
-//                     <img src="${producto.imagen}" alt="${producto.nombre}" title="${producto.nombre}">
-//                 </a>    
-//                     <hr>
-//             </div>
-            
-//             <div class="Informacion_producto">
-//                 <p> 
-//                     ${producto.marca} <br>
-//                     ${producto.nombre} <br>
-//                     $ ${producto.precio}.
-//                 </p>
-//             </div>
-
-//             <div class="boton_comprar d-grid">
-//                 <button class="btn justify-content-md-center btn-outline-success" type="submit">Agregar al Carro</button>
-//             </div>
-//             `
-//         nuestrosProductos.append(cardProducto)
-
+// fetch("javascript/date.json")
+//     .then(response => response.json())
+//     .then(data => {
+//         listaDeProductos = data;
+//         renderizarNuestrosProductos(listaDeProductos)
 //     })
-    
-//     const verMasDelProducto = document.querySelectorAll('.card_producto')
-//     verMasDelProducto.forEach((verMas) => {
-//         verMas.addEventListener('click', detallesProducto)
-//     })
-
-
-// }
-
-
-
-// renderizarNuestrosProductos();
-
-
