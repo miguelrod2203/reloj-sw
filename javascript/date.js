@@ -20,7 +20,7 @@ class Producto {
 let producto1 = new Producto( '1', 'APPLE', 'Apple Watch Se (44Mm, Gps)', 'Azul media noche', 'imagenes/smarwatch01.jpg', 'Digital', 'Unisex', 339990, 'IOS');
 let producto2 = new Producto( '2', 'APPLE', 'Apple Watch Ultra (49mm, GPS + Cellular)', 'Blanco estelar', 'imagenes/smarwatch02.jpg', 'Digital', 'Unisex', 1079990, 'IOS');
 let producto3 = new Producto( '3', 'APPLE', 'Apple Watch series 7 (41mm, GPS)', 'Rojo', 'imagenes/smarwatch03.jpg', 'Digital', 'Unisex', 429990, 'IOS');
-let producto4 = new Producto( '4', 'APPLE', 'Apple Watch Series 3 (42Mm, Gps)', 'Negra', 'imagenes/smarwatch04.jpg', 'Digital', 'Unisex', 249990, 'IOS');
+let producto4 = new Producto( '4', 'APPLE', 'Apple Watch Series 3 (42Mm, Gps)', 'Negro', 'imagenes/smarwatch04.jpg', 'Digital', 'Unisex', 249990, 'IOS');
 let producto5 = new Producto( '5', 'APPLE', 'Apple Watch Series 8 (45mm, GPS)', 'Blanco estelar', 'imagenes/smarwatch05.jpg', 'Digital', 'Unisex', 549990, 'IOS');
 
 let producto6 = new Producto( '6', 'HUAWEI', 'Huawei Watch Gt 3 42Mm Gold Huawei', 'Dorado', 'imagenes/smarwatch06.jpg', 'Digital', 'Mujer', 219990, 'Android/IOS');
@@ -44,7 +44,7 @@ let producto19 = new Producto( '19', 'GARMIN', 'Smartwatch Garmin Fenix 6', 'Zaf
 let producto20 = new Producto( '20', 'GARMIN', 'Smartband Garmin Vivofit 4', 'Negro', 'imagenes/smarwatch20.jpg', 'Digital', 'Unisex', 99990, 'Android/IOS');
 let producto21 = new Producto( '21', 'GARMIN', 'Smartwatch Garmin Venu Sq', 'Azul marino', 'imagenes/smarwatch21.jpg', 'Digital', 'Unisex', 319990, 'Android/IOS');
 let producto22 = new Producto( '22', 'GARMIN', 'Smartwatch Lily Blanco Silicona GARMIN', 'Blanco', 'imagenes/smarwatch22.jpg', 'Digital', 'Mujer', 249990, 'Android/IOS');
-let producto23 = new Producto( '23', 'GARMIN', 'Smartband Garmin Vivosmart 5 Garmin', 'blanco', 'imagenes/smarwatch23.jpg', 'Digital', 'Unisex', 179990, 'Android/IOS');
+let producto23 = new Producto( '23', 'GARMIN', 'Smartband Garmin Vivosmart 5 Garmin', 'Blanco', 'imagenes/smarwatch23.jpg', 'Digital', 'Unisex', 179990, 'Android/IOS');
 
 
 let producto24 = new Producto( '24', 'FOXYSMART', 'Smartwatch DT7 PRO Series 7 44 mm', 'Negro', 'imagenes/smarwatch24.jpg', 'Digital', 'Unisex', 78990, 'Android/IOS');
