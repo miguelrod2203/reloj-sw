@@ -4,7 +4,7 @@
 
 let listaDeProductos = [];
 
-fetch("javascript/date.json")
+fetch("json/date.json")
     .then(response => response.json())
     .then(data => {
         listaDeProductos = data;
