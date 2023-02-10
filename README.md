@@ -84,8 +84,14 @@ el cual cuenta con las siguientes secciones y funcionalidades.
         carrito y si preciona SI. efectivamente borre el carrito y 
         muestra nuevamente el mensaje (tu carrito esta vacio).
 
-        Boton pagar... estamos trabajando en esto oks!
-        la idea es que al hacer click en este boton se muestre un 
-        formulario para ingresar datos como:
-        (nombre, tel, direccion, envio o retiro en tienda, metodo de pago)
-        y dar por terminada la compra.
+        Cuenta con un boton ir a pagar el cual al precionar deja de
+        mostrar los productos, pero mantiene el precio total a 
+        pagar y muestra un formulario para captar datos del cliente
+        (nombre, telefono, correo, direccion, observacion, metodo de pago)
+        todo el formulario esta validado con js y solo hasta que llene
+        todos los campos puede precionar el boton pagar.
+
+        El boton pagar del final muestra un mensaje usando la libreria
+        tooastify para avisar que la compra fue finalizada, a su vez,
+        limpia el formulario y vacia el carrito... quedando de nuevo,
+        el mensaje tu carrito esta vacio.

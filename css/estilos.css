@@ -178,40 +178,6 @@ body {
 }
 
 
-/* Footer*/
-
-.container .footer { 
-    grid-area: footer; 
-
-    border-top: 1px solid #198754;   
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between; 
-    align-items: baseline;
-    margin-top:20px; 
-}
-.container .footer .redes-sociales li { 
-    list-style: none;
-}
-.container .footer .redes-sociales li a { 
-    text-decoration: none;
-    color: #000000;
-}
-.container .footer .redes-sociales li a:hover { 
-    text-decoration: underline;
-}
-.container .footer .nosotros li { 
-    list-style: none;
-    color: #000000;
-}
-.container .footer .ubicacion li { 
-    list-style: none;
-    color: #000000;
-}
-
-
-
 /* Estilos del carrito */
 .container-carrito{
     padding: 20px;
@@ -285,6 +251,38 @@ body {
 
 .disabled {
     display: none;
+}
+
+/* Footer*/
+
+.container .footer { 
+    grid-area: footer; 
+
+    border-top: 1px solid #198754;   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: baseline;
+    margin-top:20px; 
+}
+.container .footer .redes-sociales li { 
+    list-style: none;
+}
+.container .footer .redes-sociales li a { 
+    text-decoration: none;
+    color: #000000;
+}
+.container .footer .redes-sociales li a:hover { 
+    text-decoration: underline;
+}
+.container .footer .nosotros li { 
+    list-style: none;
+    color: #000000;
+}
+.container .footer .ubicacion li { 
+    list-style: none;
+    color: #000000;
 }
 
 /* medias Querys para pantalla de 767px*/
