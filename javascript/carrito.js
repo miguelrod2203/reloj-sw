@@ -217,7 +217,7 @@ formularioCliente.addEventListener("submit", e=>{
             title: '',
             title: 'COMPRA REALIZADA.\nEn un máximo de 5 días hábiles recibirás tu compra .',
             showConfirmButton: false,
-            timer: 4000
+            timer: 5000
           })
 
         productosEnCarrito.length = 0;
@@ -233,6 +233,3 @@ formularioCliente.addEventListener("submit", e=>{
         }, 5000);    
     }
 })
-
-// funcion para ir atras
-

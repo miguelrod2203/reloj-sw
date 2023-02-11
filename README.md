@@ -103,6 +103,6 @@ el cual cuenta con las siguientes secciones y funcionalidades.
         Finalmente, para que después de realizada la compra no quede el 
         el cliente con la vista del mensaje de tu carrito está vacío, 
         aplique una función asíncrona para redirigirlo a la página de 
-        inicio... el mensaje del tooastify tarda 4000 milisegundos en 
+        inicio... el mensaje del tooastify tarda 5000 milisegundos en 
         dejar de mostrarse, entonces coloque la función asíncrona que 
         se active en 5000 milisegundos.  

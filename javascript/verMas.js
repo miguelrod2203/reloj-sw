@@ -1,5 +1,6 @@
 "use strict"
 
+// contador de productos en carrito
 const contador = document.querySelector('#contador');
 
 let productosEnCarrito;
@@ -12,7 +13,6 @@ if(productosEnCarritoLS) {
     productosEnCarrito = [];
 }
 
-// contador de productos en carrito
 function actualizarcontador() {
     let contadorProductos = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     contador.innerText = contadorProductos;
@@ -53,11 +53,4 @@ const caracteristicasDeProducto = (e) => {
     document.querySelector('.imagen').appendChild(img)
 }
 caracteristicasDeProducto();
-
-
-
-
-
-
-
 
