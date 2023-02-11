@@ -13,6 +13,7 @@ if(productosEnCarritoLS) {
 }
 
 // contador de productos en carrito
+
 function actualizarcontador() {
     let contadorProductos = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     contador.innerText = contadorProductos;

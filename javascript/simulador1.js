@@ -1,5 +1,6 @@
 // "use strict" 
 
+// // valido para primera entrega
 // // este simulador contempla los temas de
 // // variables / control de flujo / ciclos / funciones
 

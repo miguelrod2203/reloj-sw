@@ -119,7 +119,7 @@ function actualizarTotal () {
     total.innerText = `Total a pagar: $ ${totalCalculado}`;
 }
 
-// para vaciar todo el carrito 
+// funcion para vaciar todo el carrito 
 
 botonVaciar.addEventListener("click", vaciarCarrito);
 function vaciarCarrito() {

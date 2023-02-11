@@ -1,5 +1,6 @@
 // "use strict" 
 
+// // valido para segunda entrega
 // // este simulador contempla los temas de
 // // variables / control de flujo / ciclos / funciones
 // // objetos / arrays / funciones de orden superior

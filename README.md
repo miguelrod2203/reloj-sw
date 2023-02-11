@@ -1,12 +1,24 @@
 # reloj-sw 
 
+IMPORTANTE * IMPORTANTE * IMPORTANTE * IMPORTANTE *
+
+    Antes de comenzar esta experiencia queremos acotarle que 
+    la lista de productos está cargada desde un archivo 
+    json (date.json), si tiene algún problema para ver los  
+    productos, puedes des comentar en los html el script
+    <!-- <script src="../javascript/date.js"></script> --> 
+    en este script se encuentra la lista de productos. 
+
+    
+
 *Nombre del proyecto. 
-reloj-sw (Smart Watch) 
+
+    reloj-sw (Smart Watch) 
 
 *Descripción del Proyecto 
 
-Es un E-Commerce para venta de relojes inteligentes, 
-el cual cuenta con las siguientes secciones y funcionalidades. 
+    Es un E-Commerce para venta de relojes inteligentes, 
+    el cual cuenta con las siguientes secciones y funcionalidades. 
 
     Inicio. 
 
@@ -106,3 +118,5 @@ el cual cuenta con las siguientes secciones y funcionalidades.
         inicio... el mensaje del tooastify tarda 5000 milisegundos en 
         dejar de mostrarse, entonces coloque la función asíncrona que 
         se active en 5000 milisegundos.  
+
+*Fin.

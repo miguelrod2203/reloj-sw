@@ -29,8 +29,6 @@ const nuestrosProductos = document.querySelector('#nuestrosProductos');
 let botonesAgregar = document.querySelectorAll('.agregar-producto');
 const contador = document.querySelector('#contador');
 
-
-
 const renderizarNuestrosProductos = () => {
     listaDeProductos.forEach((producto) => {
         const cardProducto = document.createElement('div')
@@ -66,7 +64,6 @@ const renderizarNuestrosProductos = () => {
     })
 
     actualizarBotonesAgregar();
-
 }
 
 renderizarNuestrosProductos();
@@ -84,7 +81,6 @@ function actualizarBotonesAgregar (){
 // agregar producto al carrito
 
 let productosEnCarrito;
-
 let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
 if(productosEnCarritoLS) {
@@ -94,15 +90,14 @@ if(productosEnCarritoLS) {
     productosEnCarrito = [];
 }
 
-
 function agregarAlCarrito(e){
     Toastify({
         text: "Producto agregado",
         duration: 3000,
         close: false,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top", 
+        position: "right", 
+        stopOnFocus: true, 
         style: {
           background: "linear-gradient(to right, #198754, #96c93d)",
           borderRadius: "2rem",
@@ -110,10 +105,10 @@ function agregarAlCarrito(e){
           padding: "5px"
         },
         offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '2rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: '1.5rem', 
+            y: '2rem' 
           },
-        onClick: function(){} // Callback after click
+        onClick: function(){} 
       }).showToast();
 
     const idBoton = e.currentTarget.id;
@@ -138,12 +133,4 @@ function actualizarcontador() {
     let contadorProductos = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     contador.innerText = contadorProductos;
 }
-
-
-
-
-
-
-
-
 

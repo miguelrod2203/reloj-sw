@@ -15,7 +15,7 @@ class Producto {
 }
 
 
-// MIS PRODUCTOS
+// MIS PRODUCTOS.
 
 let producto1 = new Producto( '1', 'APPLE', 'Apple Watch Se (44Mm, Gps)', 'Azul media noche', 'imagenes/smarwatch01.jpg', 'Digital', 'Unisex', 339990, 'IOS');
 let producto2 = new Producto( '2', 'APPLE', 'Apple Watch Ultra (49mm, GPS + Cellular)', 'Blanco estelar', 'imagenes/smarwatch02.jpg', 'Digital', 'Unisex', 1079990, 'IOS');

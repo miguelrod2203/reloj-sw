@@ -53,4 +53,3 @@ const caracteristicasDeProducto = (e) => {
     document.querySelector('.imagen').appendChild(img)
 }
 caracteristicasDeProducto();
-

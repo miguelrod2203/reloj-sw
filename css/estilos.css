@@ -242,17 +242,13 @@ body {
     font-size: 12px;
     display: block;
 }
-
 .container-carrito .footer-carrito {
     padding: 10px;
 }
-
-
-
-
 .disabled {
     display: none;
 }
+
 
 /* Footer*/
 
@@ -286,6 +282,7 @@ body {
     color: #000000;
 }
 
+
 /* medias Querys para pantalla de 767px*/
 
 @media screen and (max-width: 767px) {
@@ -293,6 +290,7 @@ body {
         width: 100%;
     }
 }
+
 
 /* medias Querys para pantalla de 576px */
 
