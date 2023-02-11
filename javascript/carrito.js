@@ -155,7 +155,10 @@ botonPagar.addEventListener("click", pagarCarrito);
 function pagarCarrito() {
     captacionDatos.classList.remove("disabled");
     contenedorCarritoConProductos.classList.add("disabled");
+    botonVaciar.classList.add("disabled");
+    botonPagar.classList.add("disabled");
 }
+
 
 // validar formulario de compra
 
@@ -214,7 +217,7 @@ formularioCliente.addEventListener("submit", e=>{
             title: '',
             title: 'COMPRA REALIZADA.\nEn un máximo de 5 días hábiles recibirás tu compra .',
             showConfirmButton: false,
-            timer: 6000
+            timer: 4000
           })
 
         productosEnCarrito.length = 0;
@@ -222,6 +225,14 @@ formularioCliente.addEventListener("submit", e=>{
         captacionDatos.classList.add("disabled");
         cargarProductosCarrito();
         formularioCliente.reset();
+
+        // funcion asincrona para ir a inicio
+        setTimeout(inicio => {
+            history.pushState(null, 'index', '../index.html');
+            history.go(0);
+        }, 5000);    
     }
 })
+
+// funcion para ir atras
 

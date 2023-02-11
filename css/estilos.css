@@ -87,7 +87,7 @@ body {
     border: 1px solid #cccccc;
     border-radius: 10px;
     margin-bottom: 15px;
-    box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.6);
+    box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.3);
 }
 .container .contenido .contenido_producto .card_producto .imagen_producto hr {
     margin: 0px;
@@ -117,7 +117,7 @@ body {
     width: 80%;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.6);
+    box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.3);
 }
 .container .contenido .contenido_ver_mas .detalle_producto {
     text-align: left;
@@ -141,7 +141,7 @@ body {
     text-align: center;
     border: 2px solid #cccccc;
     border-radius: 5px;
-    box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.6);
+    box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.3);
 }
 .container .contenido .contacto .formulario-contacto input {
     width: 100%;
@@ -205,7 +205,7 @@ body {
     width: 100px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.6);
+    box-shadow: 10px 10px 10px rgb(20, 18, 18, 0.3);
 }
 .container-carrito .contenido-carrito .eliminar-carrito a {
     margin: 10px;
@@ -240,6 +240,7 @@ body {
 .container-carrito .captacion-datos .formulario-cliente span {
     color: #ff0000;
     font-size: 12px;
+    display: block;
 }
 
 .container-carrito .footer-carrito {
